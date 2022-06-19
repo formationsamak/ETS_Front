@@ -10,8 +10,8 @@ export function Home() {
                 <p>
                     Edit <code>src/App.tsx</code> and save to reload.
                 </p>
-                <Button>
-                    Hello, i do nothing
+                <Button onClick={() => console.log('ahah you find that thing')}>
+                    Hello, i do something
                 </Button>
             </header>
         </div>
