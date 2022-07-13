@@ -1,19 +1,22 @@
-import logo from "../../logo.svg";
-import {Button} from "@mui/material";
 import React from "react";
+import {Route,Routes} from "react-router"
+import Navbar from "../../components/navbar/Navbar";
+import Traffic from "../traffic/Traffic";
+import Sale from "../sale/Sale";
+import Buildings from "../buildings/Buildings";
+import Carte from "../../components/cartes/Carte";
 
 export function Home() {
     return (
         <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <Button onClick={() => console.log('ahah you find that thing')}>
-                    Hello, i do something
-                </Button>
-            </header>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="Traffic" element={<Traffic/>}/>
+                    <Route path="Sale" element={<Sale/>}/>
+                    <Route path="Buildings" element={<Buildings/>}/>
+                </Routes>
+                <Carte/>
+                <Navbar/>
         </div>
     );
 }
