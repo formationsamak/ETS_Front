@@ -12,20 +12,20 @@ function Carte() {
             height: "100vh",
             overflow: "clip",
             position: "relative",
-            width: "100vw",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center"
         }}>
-            <div>
-                <video
-                    style={{position: "absolute", top: 0, zIndex: -1}}
-                    autoPlay
-                    loop
-                    preload="auto"
-                    src={srcVideo}
-                    id={"home-video"} muted
-                />
-            </div>
+            <video
+                style={{position: "absolute", top: 0, zIndex: -1}}
+                autoPlay
+                loop
+                preload="auto"
+                src={srcVideo}
+                id={"home-video"} muted
+            />
 
-            <Box sx={{ paddingTop: "300px", paddingLeft: "175px" }} >
+            <Box sx={{ paddingLeft: "13rem" }} >
                 <Typography fontSize="4rem" color={"#fff"} >Business<br/> Shaped Consultation</Typography>
                 <Typography fontSize="2rem" color={"#fff"}>Online bankingb for moddre bussnesses</Typography>
 
