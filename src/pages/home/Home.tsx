@@ -1,22 +1,45 @@
 import React from "react";
-import {Route,Routes} from "react-router"
 import Navbar from "../../components/navbar/Navbar";
-import Traffic from "../traffic/Traffic";
-import Sale from "../sale/Sale";
-import Buildings from "../buildings/Buildings";
-import Carte from "../../components/cartes/Carte";
-
+import Carte from "../../components/cartes/Cartes";
+import CartesIcon from "../../components/cartesIcon/cartesIcon";
+import Carousel from "../../components/carousel/Carousel";
+import Business from "../../components/business/Business";
+import Ets23d from "../../components/ETS-2d-3d/Ets23d";
+import Rated from "../../components/rated/Rated";
+import Icongird from "../../components/iconegrid/Icongird";
 export function Home() {
     return (
         <div className="App">
-                <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="Traffic" element={<Traffic/>}/>
-                    <Route path="Sale" element={<Sale/>}/>
-                    <Route path="Buildings" element={<Buildings/>}/>
-                </Routes>
-                <Carte/>
+            <header>
                 <Navbar/>
+            </header>
+            <section id={"homecarte"}>
+                <Carte/>
+            </section>
+            
+            <section >
+                <CartesIcon/>
+            </section>
+            <section >
+                <Icongird/>
+            </section>
+            <section >
+                <Carousel/>
+            </section>
+            
+            <section >
+                <Ets23d/>
+            </section>
+            <section >
+                <Rated/>
+            </section>
+            
+
+            <section >
+                <Business/>
+            </section>
+        
+            
         </div>
     );
 }

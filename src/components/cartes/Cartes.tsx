@@ -1,14 +1,44 @@
-import React from 'react'
+import React from "react";
+import {Box, Typography} from "@mui/material";
+// @ts-ignore
+import srcVideo from "../../asstes/homepageVideo-cover-withFilter.mp4"
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 
-function Index() {
-  return (
-    <div>
-      <h1>wertyhjkl</h1>
-    </div>
-  )
+function Carte() {
+
+    return (
+        <Box sx={{
+            height: "100vh",
+            overflow: "clip",
+            position: "relative",
+            width: "100vw",
+        }}>
+            <div>
+                <video
+                    style={{position: "absolute", top: 0, zIndex: -1}}
+                    autoPlay
+                    loop
+                    preload="auto"
+                    src={srcVideo}
+                    id={"home-video"} muted
+                />
+            </div>
+
+            <Box sx={{ paddingTop: "300px", paddingLeft: "175px" }} >
+                <Typography fontSize="4rem" color={"#fff"} >Business<br/> Shaped Consultation</Typography>
+                <Typography fontSize="2rem" color={"#fff"}>Online bankingb for moddre bussnesses</Typography>
+
+                <Stack spacing={2} direction="row" paddingTop= "30px">
+                    <Button sx={{ borderRadius: '10px', padding:'10px 40px', bgcolor: '#f1f1f1', borderColor: 'black',color: 'black'}}  variant="outlined">Estimation de prix</Button>
+                </Stack>
+            </Box>
+
+        </Box>
+    );
 }
 
-export default Index
+export default Carte;
 
 
 

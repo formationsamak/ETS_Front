@@ -9,17 +9,16 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-
 import MenuItem from '@mui/material/MenuItem';
-
 import { Link } from 'react-router-dom';
-import Logo from '../../asstes/logo.png'
+import Logo from '../../asstes/Group 1 (9).png'
 
 
 
 
-const pages = ['Home', 'Traffic','Sale', 'Buildings'];
-const title = "EST"
+
+const pages = ['home', 'traffic', 'sale', 'buildings'];
+
 
 
 const Navbar = () => {
@@ -38,29 +37,26 @@ const Navbar = () => {
 
 
   return (
-    <AppBar position="fixed" color="transparent" >
+    <AppBar sx={{borderBottom: "2px solid #fff",boxShadow: "none"}} position="fixed" color="transparent" >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
       
           <Typography
-            variant="h6"
+            variant="h5"
             noWrap
             component="a"
-            href="/"
+            href=""
             sx={{
               mr: 2,
-              display: { xs: 'none', md: 'flex' },
+              flexGrow: 1,
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
-              
             }}
           >
-              <img src={Logo} alt=""  />
-
-             {title}
+          <img src={Logo} alt=""  />
           </Typography>
 
           <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
@@ -94,30 +90,13 @@ const Navbar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"><Link style={{textDecoration:'none',color:"#002984"}} to={`/${page}`}>{page}</Link></Typography>
+                  <Typography textAlign="center"><Link style={{textDecoration:'none',color:"#fff"}} to={`/${page}`}>{page}</Link></Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box> 
         
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              // display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-          
-          </Typography>
+      
           
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -126,14 +105,14 @@ const Navbar = () => {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-               <Link style={{textDecoration:'none',color:"#002984",margin:'25px'}} to={`/${page}`}>{page}</Link>
+               <Link style={{textDecoration:'none',color:"#fff",margin:'25px'}} to={`/${page}`}>{page}</Link>
               </Button>
             ))}
           </Box>
 
           <Stack spacing={2} direction="row">
-            <Button variant="outlined">Estimation de prix</Button>
-            <Button variant="outlined">Contact</Button>
+            <Button sx={{ borderRadius: '10px', padding:'9px 40px', bgcolor: '#f1f1f1', borderColor: 'black',color: 'black'}}  variant="outlined">Estimation de prix</Button>
+            <Button sx={{ borderRadius: '10px', padding:'9px 40px', bgcolor: '#f1f1f1', borderColor: 'black',color: 'black'}} variant="outlined">Contact</Button>
           </Stack>
          
         </Toolbar>
