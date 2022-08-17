@@ -23,7 +23,7 @@ function Ets23d() {
         overflow: "clip",
         position: "fixe",
         width: "50%",
-        backgroundColor:'#f4ff81'
+        backgroundColor:'#f1f1f1'
         
        }} >
 

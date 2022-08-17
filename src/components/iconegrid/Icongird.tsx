@@ -83,12 +83,6 @@ function Icongird() {
         <Box sx={{  textAlign:'center', paddingBottom: "7px",paddingTop: "38px"}}>
         <img src={icon6} alt="" /></Box>
       </Box>
-      
-
-      
-
-      
-     
     </Box>
   )
 }
