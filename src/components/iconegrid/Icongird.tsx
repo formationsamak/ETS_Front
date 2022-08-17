@@ -15,7 +15,6 @@ function Icongird() {
         height: "40vh",
         overflow: "clip",
         position: "relative",
-        width: "100vw",
         backgroundColor:'#eeeeee',
         display: 'flex'
         

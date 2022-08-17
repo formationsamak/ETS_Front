@@ -13,8 +13,7 @@ function Business() {
             height: "600px",
             overflow: "clip",
             position: "relative",
-            width: "100vw",
-           
+
         }}>
          <img style={{position: "absolute", top: 0, zIndex: -1,    width: '100%'}}  src={srcVideo}/>
             

@@ -17,7 +17,6 @@ export function Home() {
             <section id={"homecarte"}>
                 <Carte/>
             </section>
-            
             <section >
                 <CartesIcon/>
             </section>
@@ -27,22 +26,18 @@ export function Home() {
             <section >
                 <Carousel/>
             </section>
-            
             <section >
                 <Ets23d/>
             </section>
             <section >
                 <Rated/>
-            </section>
-    
+            </section>    
             <section >
                 <Business/>
             </section>
             <section >
                 <Footer/>
             </section>
-        
-            
         </div>
     );
 }
