@@ -6,23 +6,27 @@ import srcVideo from "../../asstes/fd847150-42ef-4388-8269-0f23783a5394_CTA_bann
 import Button from '@mui/material/Button';
 
 
+
 function Business() {
 
     return (
         <Box sx={{
-            height: "600px",
-            overflow: "clip",
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-evenly',
+            alignItems: 'center',
+            alignContent: 'stretch',
             position: "relative",
-       
+
 
         }}>
-         <img style={{position: "absolute", top: 0, zIndex: -1,    width: '100%'}}  src={srcVideo}/>
+         <img style={{position: "absolute", top: 0, zIndex: -1,height:'60vh',    width: '100%'}}  src={srcVideo}/>
             
-         <Box  sx={{textAlign: "center",paddingTop:'200px'}}>
-          <Typography fontSize="2.5rem"      padding='5px'>Join ETS</Typography> 
-          <Typography fontSize="1.5rem" padding='15px' color='#e0e0e0'>Welcome to the future of banking </Typography> 
-          <Button sx={{ borderRadius: '10px', padding:'10px 74px', bgcolor: '#212121', border: 2,color: 'white'}}  >Join Us</Button>
-        </Box>
+         
+          <Typography fontSize="2.5rem"      paddingTop='45px'>Join ETS</Typography> 
+          <Typography fontSize="1.5rem" padding='45px' color='#e0e0e0'>Welcome to the future of banking </Typography> 
+          <Button sx={{ borderRadius: '10px', padding:'15px 60px', bgcolor: '#212121', border: 2,color: 'white'}}  >Join Us</Button>
+      
        
 
         </Box>
