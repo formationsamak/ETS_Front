@@ -17,15 +17,17 @@ function Business() {
             alignItems: 'center',
             alignContent: 'stretch',
             position: "relative",
+            overflow:'hidden',
+            padding:'140px'
 
 
         }}>
-         <img style={{position: "absolute", top: 0, zIndex: -1,height:'60vh',    width: '100%'}}  src={srcVideo}/>
+         <img style={{position: "absolute", top: 0, zIndex: -1,   width: '100%'}}  src={srcVideo}/>
             
          
-          <Typography fontSize="2.5rem"      paddingTop='45px'>Join ETS</Typography> 
-          <Typography fontSize="1.5rem" padding='45px' color='#e0e0e0'>Welcome to the future of banking </Typography> 
-          <Button sx={{ borderRadius: '10px', padding:'15px 60px', bgcolor: '#212121', border: 2,color: 'white'}}  >Join Us</Button>
+          <Typography fontSize="2.5rem"      >Join ETS</Typography> 
+          <Typography fontSize="1.5rem" margin='20px' color='#e0e0e0'>Welcome to the future of banking </Typography> 
+          <Button sx={{ borderRadius: '10px',  bgcolor: '#212121', border: 2,color: 'white'}}  >Join Us</Button>
       
        
 
