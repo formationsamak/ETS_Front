@@ -12,6 +12,8 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
 import Logo from '../../asstes/Group 1 (9).png'
+import Withbutton from '../buttons/Withbutton';
+import Blacbutton from '../buttons/Blacbutton';
 
 
 
@@ -110,9 +112,10 @@ const Navbar = () => {
             ))}
           </Box>
 
-          <Stack spacing={2} direction="row">
-            <Button sx={{ borderRadius: '10px', padding:'9px 40px', bgcolor: '#f1f1f1', borderColor: 'black',color: 'black'}}  variant="outlined">Estimation de prix</Button>
-            <Button sx={{ borderRadius: '10px', padding:'9px 40px', bgcolor: '#f1f1f1', borderColor: 'black',color: 'black'}} variant="outlined">Contact</Button>
+          <Stack  direction="row">
+            <Blacbutton/>
+            <Withbutton/>
+           
           </Stack>
          
         </Toolbar>

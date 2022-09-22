@@ -1,7 +1,8 @@
 import React from 'react'
-import {Box, Typography,Button} from "@mui/material";
+import {Box, Typography} from "@mui/material";
 import srcVideo from "../../asstes/579-5796284_travel-logo-black-and-white-hd-png-download-removebg-preview 1.png"
 import srcVideo1 from "../../asstes/—Pngtree—insignia branding symbol of building_5005307 1.png"
+import Button1 from '../buttons/Buttons';
 
 
 function Ets23d() {
@@ -33,18 +34,8 @@ function Ets23d() {
              <img src={srcVideo} alt="" />
         </Box>
 
-        <Button
-          sx={{
-          paddingLeft: "840px",
-          borderRadius: '10px',
-          padding:'9px 40px',
-          bgcolor: '#f1f1f1',
-          borderColor: 'black',
-          color: 'black'}}  variant="outlined">
-
-            Find out mor
-
-        </Button>
+      
+        <Button1/>
 
 
       </Box>
@@ -73,7 +64,7 @@ function Ets23d() {
         </Box>
 
        
-        <Button
+        {/* <Button
           sx={{ 
           paddingLeft: "840px",
           borderRadius: '10px',
@@ -84,7 +75,9 @@ function Ets23d() {
 
               Find out more
 
-        </Button>
+        </Button> */}
+
+         <Button1/>
 
 
       </Box>

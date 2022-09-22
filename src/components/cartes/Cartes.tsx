@@ -4,6 +4,8 @@ import {Box, Typography} from "@mui/material";
 import srcVideo from "../../asstes/homepageVideo-cover-withFilter.mp4"
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import Button1 from '../buttons/Buttons';
+
 
 function Carte() {
 
@@ -30,7 +32,7 @@ function Carte() {
                 <Typography fontSize="2rem" color={"#fff"}>Online bankingb for moddre bussnesses</Typography>
 
                 <Stack spacing={2} direction="row" paddingTop= "30px">
-                    <Button sx={{ borderRadius: '10px', padding:'10px 40px', bgcolor: '#f1f1f1', borderColor: 'black',color: 'black'}}  variant="outlined">Estimation de prix</Button>
+                        <Button1/>
                 </Stack>
             </Box>
 
