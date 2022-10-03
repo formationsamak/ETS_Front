@@ -10,9 +10,8 @@ export default function Blacbutton() {
             
     sx={{
       position: 'absolute',
-    
       width:'174px',
-      height:'40px',
+      height:'50px',
       left:'1200px',
       top:'16px',
       fontfamily: 'Noto Sans',
@@ -24,7 +23,7 @@ export default function Blacbutton() {
       color: '#000000',
       background: '#FFFFFF',
       borderRadius: '5px',
-      margin: '0 5px 10px 0',
+      margin: '0 5px 5px 10px',
     
      
     }}>

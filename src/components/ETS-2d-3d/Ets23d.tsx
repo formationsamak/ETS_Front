@@ -49,7 +49,7 @@ function Ets23d() {
          alignItems: 'center',
          width: "50%",
          padding:'15px',
-         backgroundColor:'#212121'
+         backgroundColor:'#000'
         
       }} >
 

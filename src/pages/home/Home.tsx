@@ -10,8 +10,6 @@ import Icongird from "../../components/iconegrid/Icongird";
 import Footer from "../../components/footer/Footer";
 
 
-
-
 export function Home() {
     return (
         <div className="App">
@@ -42,10 +40,6 @@ export function Home() {
             <section >
                 <Footer/>
             </section>
-          
-          
-           
-        
         </div>
     );
 }

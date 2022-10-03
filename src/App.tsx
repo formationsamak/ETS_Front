@@ -5,14 +5,16 @@ import Traffic from "./pages/traffic/Traffic";
 import Sale from "./pages/sale/Sale";
 import Buildings from "./pages/buildings/Buildings";
 
+
 function App() {
     return (
         <>
             <Routes>
-                <Route path="/" element={<Home/>}/>
+                <Route path="home" element={<Home/>}/>
                 <Route path="traffic" element={<Traffic/>}/>
                 <Route path="sale" element={<Sale/>}/>
                 <Route path="buildings" element={<Buildings/>}/>
+             
             </Routes>
         </>
     );

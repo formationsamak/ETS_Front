@@ -19,6 +19,7 @@ const Footer = () => {
        display: 'flex',
        flexDirection: 'column',
        alignItems:'stretch',
+       
       }} maxWidth="xl">
   
   

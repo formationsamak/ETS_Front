@@ -19,7 +19,7 @@ import Blacbutton from '../buttons/Blacbutton';
 
 
 
-const pages = ['home', 'traffic', 'sale', 'buildings'];
+const pages = ['home', 'traffic', 'sale', 'buildings','withbutton'];
 
 
 
@@ -39,7 +39,7 @@ const Navbar = () => {
 
 
   return (
-    <AppBar sx={{borderBottom: "2px solid #fff",boxShadow: "none"}} position="fixed" color="transparent" >
+    <AppBar sx={{borderBottom: "2px solid #fff",boxShadow: "none",backgroundColor:'#424242' }} position="fixed" color="transparent" >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
       
@@ -112,7 +112,7 @@ const Navbar = () => {
             ))}
           </Box>
 
-          <Stack  direction="row">
+          <Stack spacing={2} direction="row">
             <Blacbutton/>
             <Withbutton/>
            
