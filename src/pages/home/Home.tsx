@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../../components/navbar/Navbar";
+import Footer from "../../components/footer/Footer";
 import Carte from "../../components/cartes/Cartes";
 import CartesIcon from "../../components/cartesIcon/cartesIcon";
 import Carousel from "../../components/carousel/Carousel";
@@ -7,7 +8,6 @@ import Business from "../../components/business/Business";
 import Ets23d from "../../components/ETS-2d-3d/Ets23d";
 import Rated from "../../components/rated/Rated";
 import Icongird from "../../components/iconegrid/Icongird";
-import Footer from "../../components/footer/Footer";
 
 
 export function Home() {

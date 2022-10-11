@@ -1,5 +1,5 @@
 import React from 'react';
-import {  TextField, Button,  Typography, Box } from '@mui/material';
+import {TextField, Button,  Typography, Box } from '@mui/material';
 import theme from '../../theme';
 import {useStyle} from "./style"
 
@@ -20,14 +20,13 @@ function ContactUs() {
               </Box>
               <Box sx={style.paddings}>
                   <TextField
-                  sx={{ background:'#F1F2F3',
-                        borderRadius: '5px',}} multiline rows={8} placeholder="Votre question"  fullWidth required />
+                  sx={{ background:'#F1F2F3',borderRadius: '5px',}} multiline rows={8} placeholder="Votre question"  fullWidth required />
               </Box>
               <Box sx={style.paddings}>
                 <Button sx={style.buttons} type="submit" variant="contained" >Submit</Button>
               </Box>
             </Box>
-          <Box >
+          <Box>
             <Typography variant='h2' >Send Us a message</Typography>
             <Typography sx={style.h}>
              We will try our best to guide you and respond to your message within 24 hours !
